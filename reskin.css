@@ -1,0 +1,29 @@
+.bookmark {
+  min-height: 0;
+  padding: 0;
+}
+
+.bookmark-image {
+  max-height: 25px;
+}
+
+.bookmark-group-images {
+  display: none;
+}
+
+.bookmark-image .is-visible {
+  height: 25px !important;
+  width: 25px !important;
+}
+
+.bookmarks-subheader {
+  display: none;
+}
+
+.bookmark-label-dpt {
+  display: none;
+}
+
+.bg-image-btn {
+  height: 32px !important;
+}
