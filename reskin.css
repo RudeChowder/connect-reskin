@@ -1,3 +1,7 @@
+.bookmarks-bar {
+  max-width: 325px;
+}
+
 .bookmark {
   min-height: 0;
   padding: 0;
@@ -26,4 +30,8 @@
 
 .bg-image-btn {
   height: 32px !important;
+}
+
+.bookmark-badge-group-conv-count {
+  margin-left: 6px;
 }
