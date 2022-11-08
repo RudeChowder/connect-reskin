@@ -6,7 +6,7 @@
   "description": "Makes Connect look nicer",
 
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "./connect.png"
   },
 
   "content_scripts": [
