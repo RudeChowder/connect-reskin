@@ -54,6 +54,9 @@ const sfRooms = [
 //   "System Operations",
 // ]
 
+const roomBookmarksSection = document.querySelector(".bookmarks-rooms")
+roomBookmarksSection.style.borderBottom = "thick solid #5f6670"
+
 const roomBookmarks = Array.from(document.querySelectorAll(".rooms-bookmark"))
 
 roomBookmarks.forEach( bookmark => {
