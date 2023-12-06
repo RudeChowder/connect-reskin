@@ -1,13 +1,21 @@
-const glcMembers = [
-  "Garett Arrowood",
-  "Matt Carr",
-  "Dirk Cionci",
-  "Kyle Fadigan",
-  "Prince Lang",
-  "Kristi Lin",
-  "Gabriella Massaro",
-  "Mark Rosenberg",
-  "Jonathan Watkins",
+// const glcMembers = [
+//   "Garett Arrowood",
+//   "Matt Carr",
+//   "Dirk Cionci",
+//   "Kyle Fadigan",
+//   "Prince Lang",
+//   "Jon Marshall",
+//   "Gabriella Massaro",
+//   "Edward Saleeby",
+//   "Jonathan Watkins",
+// ]
+
+const sfMembers = [
+  "Emilia del Pino",
+  "Michelle Hey",
+  "Emily Jenkins",
+  "Mike McGillin",
+  "Ramon Ruiz",
 ]
 
 const robots = [
@@ -19,17 +27,22 @@ const oneToOneBookmarks = peopleBookmarks.filter( bookmark => (!!bookmark.queryS
 
 oneToOneBookmarks.forEach( bookmark => {
   const nameLabel = bookmark.querySelector(".bookmark-label-name").innerHTML
-  if (glcMembers.some( member => nameLabel.includes(member) )) {
+  if (sfMembers.some( member => nameLabel.includes(member) )) {
     bookmark.style.backgroundColor = "#b0ebb8"
   } else if (robots.some( member => nameLabel.includes(member) )) {
     bookmark.style.backgroundColor = "#97b2de"
   }
 })
 
-const teamRooms = [
-  "Green Lantern",
-  "GLC",
-  "Corporate Finance Devs",
+// const glcRooms = [
+//   "Green Lantern",
+//   "GLC",
+//   "Corporate Finance Devs",
+//   "Corp. Finance",
+// ]
+
+const sfRooms = [
+  "Super Friends"
 ]
 
 // const btRooms = [
@@ -45,7 +58,7 @@ const roomBookmarks = Array.from(document.querySelectorAll(".rooms-bookmark"))
 
 roomBookmarks.forEach( bookmark => {
   const roomName = bookmark.querySelector(".bookmark-label").innerHTML
-  if (teamRooms.some( member => roomName.includes(member) )) {
+  if (sfRooms.some( member => roomName.includes(member) )) {
     bookmark.style.backgroundColor = "#b0ebb8"
   // } else if (btRooms.some( member => roomName.includes(member) )) {
   //   bookmark.style.backgroundColor = "#97b2de"
