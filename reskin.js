@@ -11,11 +11,11 @@
 // ]
 
 const sfMembers = [
-  "Emilia del Pino",
-  "Michelle Hey",
-  "Emily Jenkins",
-  "Mike McGillin",
+  "Andrew McIndoe",
   "Ramon Ruiz",
+  "Shane Novitsky",
+  "Trinh Thach",
+  "Talia Turner",
 ]
 
 const robots = [
@@ -42,7 +42,8 @@ oneToOneBookmarks.forEach( bookmark => {
 // ]
 
 const sfRooms = [
-  "Super Friends"
+  "Super Friends",
+  "Super Friends Devs",
 ]
 
 // const btRooms = [
@@ -54,6 +55,11 @@ const sfRooms = [
 //   "System Operations",
 // ]
 
+const impRooms = [
+  "Nitro Web Build Status",
+  "System Operations",
+]
+
 const roomBookmarksSection = document.querySelector(".bookmarks-rooms")
 roomBookmarksSection.style.borderBottom = "thick solid #5f6670"
 
@@ -63,7 +69,7 @@ roomBookmarks.forEach( bookmark => {
   const roomName = bookmark.querySelector(".bookmark-label").innerHTML
   if (sfRooms.some( member => roomName.includes(member) )) {
     bookmark.style.backgroundColor = "#b0ebb8"
-  // } else if (btRooms.some( member => roomName.includes(member) )) {
-  //   bookmark.style.backgroundColor = "#97b2de"
+  } else if (impRooms.some( member => roomName.includes(member) )) {
+    bookmark.style.backgroundColor = "#b1c3e0"
   }
 })
